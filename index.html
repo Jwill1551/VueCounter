@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>SandBox</title>
+</head>
+<body>
+    <header id="main-title">
+        <h1>Vue Events</h1>
+    </header>
+    <section id="events">
+        <h2 id="sub-title">Events in Action</h2>
+        <button v-on:click="addCounter">Add</button>
+        <button v-on:click="subCounter">Remove</button>
+        <button v-on:click="resetCounter">Reset</button>
+        <p id="timer">Result: {{ counter }}</p>
+    </section>
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
